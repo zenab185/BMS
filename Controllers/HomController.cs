@@ -55,7 +55,7 @@ namespace WebApplication2.Controllers
         public ActionResult GetBlob(int Selectseat, string InputEmail1)
         {
             EndpointUrl = "https://zenab.documents.azure.com:443/";
-            PrimaryKey = "wAS8pdRyVFPchDQGSwCaAyDMLR8Q0hRkyQPCRaF4NtIiH0r8KJnKwFKJ7joudE2tgUder3jCewuzQpH7kYRg7g==";
+            PrimaryKey = "fgu3OlUmlxO3EktrQzyllj4s6HQZKMf9y9jszSUDS80G9cu2VkFs8jNqNLGzj9gX1qVNERgurJU3uR5XIIEj4g==";
             client = new DocumentClient(new Uri(EndpointUrl), PrimaryKey);
             client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri("1", "bmsCosmos"), InputEmail1);
             if (Selectseat <= 5)
